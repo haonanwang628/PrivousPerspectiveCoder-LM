@@ -1,0 +1,108 @@
+{
+    "target_text": "But for the purpose of a definition, I would say quality takes place in the process level and the software level.",
+    "Role_Team": [
+        {
+            "role": "Management",
+            "Disciplinary_Background": "Engineering",
+            "Area_of_Concern": "Efficiency & Performance",
+            "Scope_Values": "Data & Efficiency",
+            "Methodology": "Quantitative",
+            "Personal_Identity_Influence": "Efficiency & Performance"
+        },
+        {
+            "role": "Product Owners",
+            "Disciplinary_Background": "Psychology",
+            "Area_of_Concern": "Scalability",
+            "Scope_Values": "Culture & Meaning",
+            "Methodology": "Qualitative",
+            "Personal_Identity_Influence": "Scalability"
+        },
+        {
+            "role": "Quality Assurance",
+            "Disciplinary_Background": "Computer Science",
+            "Area_of_Concern": "Transparency",
+            "Scope_Values": "Sociology",
+            "Methodology": "Transparency",
+            "Personal_Identity_Influence": "Cultural Background"
+        }
+    ],
+    "Role_init_codebook": [
+        {
+            "role": "Efficiency & Performance",
+            "codebook": [
+                {
+                    "code": "Quality in Process",
+                    "justification": "The phrase [quality takes place in the process level] emphasizes that quality is inherently linked to the methodologies and practices employed during development."
+                },
+                {
+                    "code": "Quality in Software",
+                    "justification": "The statement [quality takes place in the software level] indicates that the final product's quality is also determined by its design and functionality, highlighting the dual nature of quality assessment."
+                }
+            ]
+        },
+        {
+            "role": "Psychologist focused on Scalability",
+            "codebook": [
+                {
+                    "code": "Quality in Process",
+                    "justification": "The phrase [quality takes place in the process level] highlights the subjective nature of quality, emphasizing that it is determined by the processes involved, which can vary based on human interpretation."
+                },
+                {
+                    "code": "Quality in Software",
+                    "justification": "The statement [quality takes place in the software level] indicates that quality is also perceived through the software itself, suggesting that user experience and functionality are key factors shaped by individual judgment."
+                }
+            ]
+        },
+        {
+            "role": "Transparency Advocate",
+            "codebook": [
+                {
+                    "code": "Quality in Process",
+                    "justification": "The phrase [quality takes place in the process level] highlights the subjective nature of quality, emphasizing that it is determined by the processes involved rather than a fixed standard."
+                },
+                {
+                    "code": "Software Quality",
+                    "justification": "By stating [the software level], the text suggests that quality is also context-dependent, varying based on the software's design and functionality, which requires human interpretation."
+                }
+            ]
+        }
+    ],
+    "Consolidating_results": {
+        "Agreed": [
+            {
+                "code": "Quality in Process",
+                "definition": "The phrase [quality takes place in the process level] emphasizes that quality is inherently linked to the methodologies and practices employed during development, highlighting the subjective nature of quality determined by the processes involved."
+            },
+            {
+                "code": "Quality in Software",
+                "definition": "The statement [quality takes place in the software level] indicates that the final product's quality is also determined by its design and functionality, suggesting that quality is context-dependent and shaped by individual judgment."
+            },
+            {
+                "code": "ALLOWED_CODE",
+                "definition": "All roles agree that the code is beneficial and should be retained based on its effectiveness and relevance to the discussed topic."
+            }
+        ],
+        "Disagreed": [
+            {
+                "code": "Software Quality",
+                "definition": "This code diverges as it emphasizes the context-dependence of quality based on design and functionality, while the other roles focus on the subjective interpretation of quality in processes, leading to a different emphasis on the nature of quality assessment."
+            }
+        ]
+    },
+    "disagree_explain": "The disagreement centers on the code [Software Quality], which emphasizes context-dependence based on design and functionality. This contrasts with other roles that focus on the subjective interpretation of quality in processes, as seen in the phrase [quality takes place in the process level]. The divergence highlights a different emphasis on how quality is assessed across roles.\n\nClick on the option under Disagreed Items on the left to start the discussion.",
+    "discuss": [],
+    "Codebook": [
+        {
+            "code": "Quality in Process",
+            "definition": "The phrase [quality takes place in the process level] emphasizes that quality is inherently linked to the methodologies and practices employed during development, highlighting the subjective nature of quality determined by the processes involved."
+        },
+        {
+            "code": "Quality in Software",
+            "definition": "The statement [quality takes place in the software level] indicates that the final product's quality is also determined by its design and functionality, suggesting that quality is context-dependent and shaped by individual judgment."
+        },
+        {
+            "code": "ALLOWED_CODE",
+            "definition": "All roles agree that the code is beneficial and should be retained based on its effectiveness and relevance to the discussed topic."
+        }
+    ]
+}

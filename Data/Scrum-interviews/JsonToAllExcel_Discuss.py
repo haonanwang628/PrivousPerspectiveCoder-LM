@@ -6,7 +6,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import Alignment
 import sys
 
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 if project_root not in sys.path:
     sys.path.append(project_root)
 
@@ -15,11 +15,11 @@ def is_long_text(value):
     return isinstance(value, str) and len(value) > 150
 
 
-def get_code_and_evidence(cb):
+def get_code_and_definition(cb):
     if 'code' in cb:
-        return cb['code'], cb['evidence']
+        return cb['code'], cb['definition']
     elif '*code' in cb:
-        return f"*{cb['*code']}", f"*{cb['*evidence']}"
+        return f"*{cb['*code']}", f"*{cb['*definition']}"
     else:
         return '', ''
 
@@ -31,11 +31,11 @@ def process_json_file(file_path):
     # Codebook
     codebook_records = []
     for cb in data['Codebook']:
-        code, evidence = get_code_and_evidence(cb)
+        code, definition = get_code_and_definition(cb)
         codebook_records.append({
             'target_text': data['target_text'],
             'code': code,
-            'evidence': evidence
+            'definition': definition
         })
     codebook_df = pd.DataFrame(codebook_records)
 
@@ -46,14 +46,14 @@ def process_json_file(file_path):
             'target_text': data['target_text'],
             'agreed/disagreed': 'Agreed',
             'code': a['code'],
-            'evidence': a['evidence']
+            'definition': a['definition']
         })
     for d in data['Consolidating_results']['Disagreed']:
         consolidating_records.append({
             'target_text': data['target_text'],
             'agreed/disagreed': 'Disagreed',
             'code': d['code'],
-            'evidence': d['evidence']
+            'definition': d['definition']
         })
     consolidating_df = pd.DataFrame(consolidating_records)
 
@@ -88,11 +88,14 @@ def process_json_file(file_path):
 
     # Role_Team
     role_team_df = pd.DataFrame(data['Role_Team'])
-    role_team_df['role / disciplinary_background / core_value'] = role_team_df.apply(
-        lambda row: f"{row['role']} / {row['disciplinary_background']} / {row['core_value']}", axis=1
+    role_team_df['perspective'] = role_team_df.apply(
+        lambda
+            row: f"{row['role']} / {row['Intended_Study_Level']} / {row['Subject']} "
+                 f"/ {row['Research_Interest']} /{row['Dimensions_Source']}",
+        axis=1
     )
-    role_team_final_df = role_team_df[['role / disciplinary_background / core_value', 'positionality']]
-    role_team_final_df = role_team_final_df[['role / disciplinary_background / core_value', 'positionality']]
+    role_team_final_df = role_team_df[['perspective', 'positionality']]
+    role_team_final_df = role_team_final_df[['perspective', 'positionality']]
 
     return codebook_df, consolidating_df, debate_df, role_team_final_df
 

@@ -5,7 +5,7 @@ import streamlit as st
 import os
 import sys
 
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.."))
 if project_root not in sys.path:
     sys.path.append(project_root)
 from utils import Agent
@@ -85,8 +85,8 @@ class SingleLLM:
             agent.event(
                 config["Setting_1"]["Inductive_coding"].replace("[Target Text]", user_input))
             reply = agent.ask()
+            agent.memory(reply, False)
             reply = json.loads(reply.replace('```', "").replace('json', '').strip())
-            agent.memory(reply)
             self.render_agent_message("Final Codebook", reply)
             st.session_state.messages.append({"role": "assistant", "content": reply})
 

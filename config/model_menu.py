@@ -7,7 +7,7 @@ MODEL_TOKENIZER_MAP = {
 llm_MaxToken = {
     "deepseek-chat": 8000,
     "deepseek-reasoner": 10000,
-    "gpt-4o-mini": 10000
+    "gpt-4o-mini": 16384
 }
 
 available_models = ["deepseek-chat", "gpt-4o-mini", "Claude"]

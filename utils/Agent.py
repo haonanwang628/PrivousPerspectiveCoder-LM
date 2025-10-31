@@ -24,6 +24,7 @@ class Agent:
 
         self.memory_lst = []
         self.max_token = llm_MaxToken[model_name]
+        self.num_token = 0
 
     def query(self, messages, max_tokens, temperature):
         """Send a query to the LLM API with streaming and error handling."""
@@ -40,7 +41,7 @@ class Agent:
                 messages=messages,
                 temperature=temperature,
                 max_tokens=max_tokens,
-                timeout=4 * 10 * 60,
+                timeout=4 * 10 * 60
             )
 
             response = response.choices[0].message.content
@@ -50,10 +51,12 @@ class Agent:
 
         return response
 
-    def ask(self, temperature=0):
+    def ask(self):
         num_context_token = sum([num_tokens_from_string(m["content"], self.model_name) for m in self.memory_lst])
-        return self.query(self.memory_lst, self.max_token - num_context_token,
-                          temperature if temperature else self.temperature)
+        t = self.max_token - num_context_token if self.max_token - num_context_token < 500 else 500
+        response = self.query(self.memory_lst, t, self.temperature)
+        self.num_token += num_context_token + t
+        return response
 
     def set_meta_prompt(self, meta_prompt: str):
         """Set the meta_prompt
@@ -78,7 +81,8 @@ class Agent:
             if_memory: True or False
             if_print: True or False
         """
-        if if_memory:
+        if if_memory and self.memory_lst[-1]["role"] == "user":
+            self.memory_lst.pop()
             self.memory_lst.append({"role": "assistant", "content": f"{memory}"})
         elif self.memory_lst[-1]["role"] == "user":
             self.memory_lst.pop()

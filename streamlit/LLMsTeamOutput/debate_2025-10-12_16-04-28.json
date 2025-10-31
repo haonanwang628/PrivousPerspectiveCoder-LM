@@ -1,0 +1,153 @@
+{
+    "target_text": "Okay, so firstly, the sprint planning meeting right. So, during the sprint planning meeting, each and every user story. So, they user stories are already there in the black block. In our set up, what I always advise the team, is that they should go through the user stories applied to the sprint planning meeting so that they know for sure what are the questions they have for the product owner. So that helps. So now, a set of the team has gone through the user stories. They know what is there in the background. They join the meeting. So how it helps is, whatever question that he has, the product owner answers it during the sprint planning meeting itself. So, the sprint planning meeting is the start of the sprint. So, if we have any doubt or query, that is answered at the very beginning rather than bringing up questions towards the end. That gives the team of the entire duration of the sprint, to work on something, rather than if it was the question was asked later on. This collaboration with the PO helps better understanding of the user stories. Then the team knows what to develop and test. What I have experiences, it a good collaboration with a knowledgeable PO reduces defects. We receive feedback on ongoing bases and we rectify quickly.",
+    "Role_Team": [
+        {
+            "role": "Management",
+            "Disciplinary_Background": "Engineering",
+            "Area_of_Concern": "Efficiency & Performance",
+            "Scope_Values": "Data & Efficiency",
+            "Methodology": "Quantitative",
+            "Personal_Identity_Influence": "Cultural Background"
+        },
+        {
+            "role": "Product Owners",
+            "Disciplinary_Background": "Psychology",
+            "Area_of_Concern": "Scalability",
+            "Scope_Values": "Culture & Meaning",
+            "Methodology": "Qualitative",
+            "Personal_Identity_Influence": "Professional Experience"
+        },
+        {
+            "role": "Scrum Masters",
+            "Disciplinary_Background": "Law",
+            "Area_of_Concern": "Robustness",
+            "Scope_Values": "Social Experience",
+            "Methodology": "Mixed Methods",
+            "Personal_Identity_Influence": "Social Identity"
+        }
+    ],
+    "Role_init_codebook": [
+        {
+            "role": "Professional Data Annotator",
+            "codebook": [
+                {
+                    "code": "User Story Review",
+                    "justification": "The emphasis on reviewing user stories before the sprint planning meeting highlights the importance of preparation for effective collaboration."
+                },
+                {
+                    "code": "Collaboration with PO",
+                    "justification": "The text underscores the significance of collaboration with the product owner, which enhances understanding and reduces defects during development."
+                },
+                {
+                    "code": "Early Question Resolution",
+                    "justification": "Addressing questions at the beginning of the sprint planning meeting allows the team to focus on development without delays, improving overall efficiency."
+                },
+                {
+                    "code": "Continuous Feedback Loop",
+                    "justification": "The mention of receiving feedback on an ongoing basis indicates a commitment to iterative improvement and quick rectification of issues."
+                }
+            ]
+        },
+        {
+            "role": "Psychologist focused on Scalability",
+            "codebook": [
+                {
+                    "code": "User Story Clarity",
+                    "justification": "The emphasis on understanding user stories is crucial for effective sprint planning, as it ensures that team members are aligned on objectives."
+                },
+                {
+                    "code": "Collaboration with PO",
+                    "justification": "The text highlights the importance of collaboration with the product owner, which fosters a better understanding and reduces defects during development."
+                },
+                {
+                    "code": "Early Query Resolution",
+                    "justification": "Addressing questions at the beginning of the sprint enhances the team's focus and productivity throughout the development cycle."
+                },
+                {
+                    "code": "Continuous Feedback Loop",
+                    "justification": "The mention of receiving feedback on an ongoing basis indicates a commitment to iterative improvement, which is essential for agile methodologies."
+                }
+            ]
+        },
+        {
+            "role": "Legal Professional focused on Robustness",
+            "codebook": [
+                {
+                    "code": "User Story Clarity",
+                    "justification": "The emphasis on understanding user stories is crucial for effective sprint planning, as it ensures that team members are aligned on project goals."
+                },
+                {
+                    "code": "Collaboration with Product Owner",
+                    "justification": "The text highlights the importance of collaboration with the product owner, which is essential for addressing questions early and reducing misunderstandings."
+                },
+                {
+                    "code": "Early Issue Resolution",
+                    "justification": "Addressing questions at the beginning of the sprint allows for a smoother workflow, minimizing disruptions and enhancing productivity throughout the sprint."
+                },
+                {
+                    "code": "Feedback Loop",
+                    "justification": "The mention of receiving feedback on an ongoing basis underscores the iterative nature of agile methodologies, which is vital for continuous improvement and defect reduction."
+                }
+            ]
+        }
+    ],
+    "Consolidating_results": {
+        "Agreed": [
+            {
+                "code": "Collaboration with PO",
+                "evidence": "The text underscores the significance of collaboration with the product owner, which enhances understanding and reduces defects during development. This is supported by the phrase, [this collaboration with the PO helps better understanding of the user stories]."
+            },
+            {
+                "code": "Early Question/Issue Resolution",
+                "evidence": "Addressing questions at the beginning of the sprint planning meeting allows the team to focus on development without delays, improving overall efficiency. This is reflected in the text, [if we have any doubt or query, that is answered at the very beginning rather than bringing up questions towards the end]."
+            },
+            {
+                "code": "Continuous Feedback Loop",
+                "evidence": "The mention of receiving feedback on an ongoing basis indicates a commitment to iterative improvement and quick rectification of issues, as seen in the statement, [we receive feedback on ongoing bases and we rectify quickly]."
+            },
+            {
+                "code": "User Story Clarity",
+                "evidence": "All roles unanimously support retaining the code 'User Story Clarity', emphasizing its importance for effective collaboration and understanding in agile methodologies."
+            }
+        ],
+        "Disagreed": [
+            {
+                "code": "User Story Clarity",
+                "evidence": "While both the Psychologist and Legal Professional emphasize the importance of understanding user stories, the former focuses on alignment on objectives, whereas the latter stresses alignment on project goals. This reflects a focus difference in interpretation of clarity."
+            }
+        ]
+    },
+    "disagree_explain": "The disagreement centers on the interpretation of \"User Story Clarity.\" The Psychologist emphasizes alignment on objectives, stating it is crucial for effective sprint planning, while the Legal Professional focuses on alignment on project goals, highlighting its importance for addressing questions early. This reflects a nuanced difference in how clarity is perceived in the context of sprint planning. \n\nClick on the option under Disagreed Items on the left to start the debate.",
+    "Debate": [
+        {
+            "Disagreed": "User Story Clarity",
+            "Process": [
+                "Round 1: ['Role1(Management): Round 1\\n{\\n\\t\"Initial Claim\": \"\u2705 Yes, the code \\\\\"User Story Clarity\\\\\" should be retained.\",\\n\\t\"Explanation\": \"The distinction between the Psychologist\\'s focus on alignment on objectives and the Legal Professional\\'s emphasis on project goals highlights the varying interpretations of clarity in user stories, which is essential for understanding different perspectives in the sprint planning process.\"\\n}', 'Role2(Product Owners): Round 1\\n{\\n\\t\"Initial Claim\": \"\u2705 Yes, the code \\\\\"User Story Clarity\\\\\" should be retained.\",\\n\\t\"Explanation\": \"The differing focuses on alignment\u2014objectives versus project goals\u2014highlight the nuanced interpretations of clarity in user stories, which is essential for understanding team dynamics and collaboration.\"\\n}', 'Role3(Scrum Masters): Round 1\\n{\\n\\t\"Initial Claim\": \"\u2705 Yes, the code \\\\\"User Story Clarity\\\\\" should be retained.\",\\n\\t\"Explanation\": \"The distinction between the Psychologist\\'s focus on alignment on objectives and the Legal Professional\\'s emphasis on project goals highlights a critical difference in interpretation of clarity, which is essential for understanding user stories effectively.\"\\n}']",
+                "Round 2: ['Role1(Management): Round 2\\n{\\n\\t\"Evidence_Literature\": {\\n\\t\\t\"Author\": \"Cohn, M.\",\\n\\t\\t\"Year\": \"2004\",\\n\\t\\t\"Title\": \"User Stories Applied: For Agile Software Development\",\\n\\t\\t\"DOI_or_Link\": \"https://www.amazon.com/User-Stories-Applied-Agile-Development/dp/0321205688\",\\n\\t\\t\"Summary\": \"This book emphasizes the importance of clear user stories in agile development, supporting the claim that clarity in user stories is crucial for aligning team objectives and project goals.\"\\n\\t},\\n\\t\"Evidence_Content\": {\\n\\t\\t\"Observation\": \"The text states, \\\\\"the team knows what to develop and test,\\\\\" indicating the necessity of clarity in user stories.\",\\n\\t\\t\"Relevance\": \"This observation underscores the importance of understanding user stories to ensure effective collaboration and project execution.\"\\n\\t},\\n\\t\"Evidence_Logic\": {\\n\\t\\t\"Reasoning\": \"Retaining the code on User Story Clarity ensures that both objectives and project goals are addressed, leading to a more comprehensive understanding.\",\\n\\t\\t\"Impact\": \"This enhances efficiency and clarity in the sprint planning process, reducing the likelihood of misunderstandings and rework.\"\\n\\t}\\n}', 'Role2(Product Owners): Round 2\\n{\\n\\t\"Evidence_Literature\": {\\n\\t\\t\"Author\": \"Boehm, B. W.\",\\n\\t\\t\"Year\": \"1988\",\\n\\t\\t\"Title\": \"A Spiral Model of Software Development and Enhancement\",\\n\\t\\t\"DOI_or_Link\": \"https://doi.org/10.1145/74334.74337\",\\n\\t\\t\"Summary\": \"This paper discusses the importance of clear requirements and user stories in software development, emphasizing that clarity leads to better alignment and fewer defects, supporting the claim about the significance of user story clarity.\"\\n\\t},\\n\\t\"Evidence_Content\": {\\n\\t\\t\"Observation\": \"The text states, \\\\\"whatever question that he has, the product owner answers it during the sprint planning meeting itself,\\\\\" indicating the importance of clarity in user stories.\",\\n\\t\\t\"Relevance\": \"This observation underscores the necessity of understanding user stories to facilitate effective communication and collaboration.\"\\n\\t},\\n\\t\"Evidence_Logic\": {\\n\\t\\t\"Reasoning\": \"Retaining the code emphasizes the need for clarity in user stories, which is crucial for aligning team efforts and reducing misunderstandings.\",\\n\\t\\t\"Impact\": \"This focus on clarity can enhance efficiency by minimizing the time spent on clarifying questions later in the process.\"\\n\\t}\\n}', 'Role3(Scrum Masters): Round 2\\n{\\n\\t\"Evidence_Literature\": {\\n\\t\\t\"Author\": \"Boehm, B. W., & Turner, R.\",\\n\\t\\t\"Year\": \"2004\",\\n\\t\\t\"Title\": \"Balancing Agility and Discipline: A Guide for the Perplexed\",\\n\\t\\t\"DOI_or_Link\": \"https://doi.org/10.1007/978-1-4471-2939-1\",\\n\\t\\t\"Summary\": \"This book discusses the importance of aligning project goals with user needs, emphasizing that clarity in user stories is crucial for successful project outcomes.\"\\n\\t},\\n\\t\"Evidence_Content\": {\\n\\t\\t\"Observation\": \"The text states, \\\\\"the team knows what to develop and test,\\\\\" indicating the necessity of clear user stories.\",\\n\\t\\t\"Relevance\": \"This observation underscores the importance of clarity in user stories for effective project execution.\"\\n\\t},\\n\\t\"Evidence_Logic\": {\\n\\t\\t\"Reasoning\": \"Retaining the code emphasizes the need for alignment on both objectives and project goals, which can enhance team collaboration.\",\\n\\t\\t\"Impact\": \"This clarity can lead to improved efficiency and reduced misunderstandings during the development process.\"\\n\\t}\\n}']",
+                "Round 3: ['Role1(Management): Round 3\\n{\\n\\t\"Role\": \"Engineer\",\\n\\t\"TwoLayerMechanism\": {\\n\\t\\t\"DecisionPattern\": \"In my role, I prioritize accuracy over efficiency, as understanding user stories clearly is essential for effective project execution and minimizing defects.\",\\n\\t\\t\"Self-Check\": {\\n\\t\\t\\t\"First_Stance\": \"I continue to support my initial claim that the code \\'User Story Clarity\\' should be retained.\",\\n\\t\\t\\t\"Then_EvidenceConsistency\": \"The evidence from Round 2, particularly the observation that \\'the team knows what to develop and test,\\' reinforces my claim by highlighting the necessity of clarity in user stories for effective collaboration and project execution.\",\\n\\t\\t\\t\"Finally_LimitationsDecision\": \"While the evidence is strong, I acknowledge that it may not fully capture all dimensions of user story clarity. However, the importance of clarity remains paramount, leading me to \\'Continue to Support.\\'\"\\n\\t\\t},\\n\\t\\t\"Cross-Debate\": {\\n\\t\\t\\t\"PerRoleAnalysis\": [\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\t\"OtherRole\": \"Psychologist\",\\n\\t\\t\\t\\t\\t\"Example\": \"The Psychologist emphasizes alignment on objectives, which is a valid perspective on user story clarity.\",\\n\\t\\t\\t\\t\\t\"Counterexample\": \"However, this focus may overlook the technical aspects of project goals that are crucial for engineers, as highlighted by the Legal Professional\\'s emphasis.\",\\n\\t\\t\\t\\t\\t\"Summary\": \"While I appreciate the Psychologist\\'s viewpoint, I find it somewhat limited in scope compared to the broader implications of project goals.\"\\n\\t\\t\\t\\t},\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\t\"OtherRole\": \"Legal Professional\",\\n\\t\\t\\t\\t\\t\"Example\": \"The Legal Professional\\'s focus on advocating for marginalized voices aligns with the need for clarity in user stories to ensure all perspectives are considered.\",\\n\\t\\t\\t\\t\\t\"Counterexample\": \"However, their emphasis on social experience may detract from the technical clarity needed for effective sprint planning, which is critical in engineering.\",\\n\\t\\t\\t\\t\\t\"Summary\": \"I find common ground with the Legal Professional on the importance of inclusivity, but I diverge on the prioritization of technical clarity.\"\\n\\t\\t\\t\\t}\\n\\t\\t\\t],\\n\\t\\t\\t\"Consensus\": \"The Psychologist and Legal Professional both recognize the importance of clarity, but their focuses differ, with the Psychologist leaning towards objectives and the Legal Professional towards social implications.\",\\n\\t\\t\\t\"Divergence\": \"I conflict with the Psychologist\\'s narrower focus on objectives and the Legal Professional\\'s emphasis on social experience, as I prioritize technical clarity for project success.\",\\n\\t\\t\\t\"HybridPerspective\": \"Combining the textual evidence of the importance of clarity with logical reasoning about the need for technical precision provides a more comprehensive understanding of user story clarity.\"\\n\\t\\t}\\n\\t}\\n}', 'Role2(Product Owners): Round 3\\n{\\n\\t\"Role\": \"Psychologist\",\\n\\t\"TwoLayerMechanism\": {\\n\\t\\t\"DecisionPattern\": \"In my role, I prioritize accuracy over efficiency, as understanding user stories deeply is essential for fostering meaningful collaboration and inclusivity.\",\\n\\t\\t\"Self-Check\": {\\n\\t\\t\\t\"First_Stance\": \"I continue to support my initial claim that the code \\'User Story Clarity\\' should be retained.\",\\n\\t\\t\\t\"Then_EvidenceConsistency\": \"The evidence from Round 2, particularly the observation that \\'whatever question that he has, the product owner answers it during the sprint planning meeting itself,\\' reinforces my claim by highlighting the necessity of clarity in user stories for effective communication.\",\\n\\t\\t\\t\"Finally_LimitationsDecision\": \"While the evidence is strong, I acknowledge that it may not cover all aspects of user story clarity. However, the importance of clarity remains paramount, leading me to decisively \\'Continue to Support.\\'\"\\n\\t\\t},\\n\\t\\t\"Cross-Debate\": {\\n\\t\\t\\t\"PerRoleAnalysis\": [\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\t\"OtherRole\": \"Legal Professional\",\\n\\t\\t\\t\\t\\t\"Example\": \"The Legal Professional emphasizes the importance of advocating for marginalized voices, which aligns with the need for clarity in user stories to ensure all perspectives are considered.\",\\n\\t\\t\\t\\t\\t\"Counterexample\": \"However, their focus on project goals rather than objectives may overlook the broader implications of user story clarity in fostering inclusivity.\",\\n\\t\\t\\t\\t\\t\"Summary\": \"While we both value clarity, our interpretations diverge on the focus of alignment, with my stance prioritizing objectives.\"\\n\\t\\t\\t\\t},\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\t\"OtherRole\": \"Engineer\",\\n\\t\\t\\t\\t\\t\"Example\": \"The Engineer\\'s emphasis on efficiency and performance resonates with my belief in the importance of clear communication.\",\\n\\t\\t\\t\\t\\t\"Counterexample\": \"However, their focus on data-driven solutions may lead to a more quantitative approach, potentially sidelining the qualitative nuances that I prioritize.\",\\n\\t\\t\\t\\t\\t\"Summary\": \"We share a common goal of clarity, but our methodologies differ, with my approach leaning towards qualitative insights.\"\\n\\t\\t\\t\\t}\\n\\t\\t\\t],\\n\\t\\t\\t\"Consensus\": \"The Psychologist and Legal Professional both emphasize the importance of understanding diverse perspectives, aligning closely on the need for clarity in user stories.\",\\n\\t\\t\\t\"Divergence\": \"The Engineer\\'s focus on efficiency may conflict with my qualitative approach, as it risks prioritizing speed over the depth of understanding.\",\\n\\t\\t\\t\"HybridPerspective\": \"Combining the emphasis on clarity from all roles, I advocate for a balanced approach that values both qualitative insights and efficient processes.\"\\n\\t\\t}\\n\\t}\\n}', 'Role3(Scrum Masters): Round 3\\n{\\n\\t\"Role\": \"Legal Professional\",\\n\\t\"TwoLayerMechanism\": {\\n\\t\\t\"DecisionPattern\": \"In my role, accuracy takes precedence over efficiency, as understanding user stories clearly is essential for equitable legal practices.\",\\n\\t\\t\"Self-Check\": {\\n\\t\\t\\t\"First_Stance\": \"I continue to support my initial claim that the code \\'User Story Clarity\\' should be retained.\",\\n\\t\\t\\t\"Then_EvidenceConsistency\": \"The evidence from Round 2, particularly the observation that \\'the team knows what to develop and test,\\' reinforces my claim by highlighting the necessity of clarity in user stories for effective project execution.\",\\n\\t\\t\\t\"Finally_LimitationsDecision\": \"While the evidence is strong, I acknowledge that it may not fully capture all dimensions of user story clarity. However, the importance of clarity remains paramount, leading me to \\'Continue to Support.\\'\"\\n\\t\\t},\\n\\t\\t\"Cross-Debate\": {\\n\\t\\t\\t\"PerRoleAnalysis\": [\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\t\"OtherRole\": \"Psychologist\",\\n\\t\\t\\t\\t\\t\"Example\": \"The Psychologist emphasizes the importance of alignment on objectives, which is a valid perspective on user story clarity.\",\\n\\t\\t\\t\\t\\t\"Counterexample\": \"However, this focus may overlook the specific project goals that are critical for legal contexts, as highlighted in my claim.\",\\n\\t\\t\\t\\t\\t\"Summary\": \"While we both value clarity, our interpretations diverge on the emphasis of objectives versus project goals.\"\\n\\t\\t\\t\\t},\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\t\"OtherRole\": \"Engineer\",\\n\\t\\t\\t\\t\\t\"Example\": \"The Engineer\\'s focus on efficiency and performance aligns with the need for clear user stories to enhance productivity.\",\\n\\t\\t\\t\\t\\t\"Counterexample\": \"Yet, this perspective may prioritize speed over the nuanced understanding of user needs, which is essential in legal contexts.\",\\n\\t\\t\\t\\t\\t\"Summary\": \"We share a common goal of clarity, but our approaches differ in prioritizing efficiency versus comprehensive understanding.\"\\n\\t\\t\\t\\t}\\n\\t\\t\\t],\\n\\t\\t\\t\"Consensus\": \"The Psychologist and Engineer both recognize the importance of clarity in user stories, aligning with my stance on its necessity.\",\\n\\t\\t\\t\"Divergence\": \"However, we diverge in our interpretations of what clarity entails, with differing priorities on objectives versus project goals.\",\\n\\t\\t\\t\"HybridPerspective\": \"Combining our perspectives, I see that while clarity is essential, the context of its application\u2014whether in legal, psychological, or engineering frameworks\u2014shapes its interpretation.\"\\n\\t\\t}\\n\\t}\\n}']",
+                "Round 4: ['Role1(Management): Round 4\\n{\\n\\t\"Final Claim\": \"\u2705 Yes, the code \\'User Story Clarity\\' should be retained.\",\\n\\t\"Final Explanation\": \"I continue to support my initial claim because the distinction between the Psychologist\\'s focus on objectives and the Legal Professional\\'s emphasis on project goals highlights the multifaceted nature of clarity in user stories, which is essential for effective collaboration in sprint planning.\",\\n\\t\"Self-Reflection\": \"Strengths: The strongest evidence is the observation that \\'the team knows what to develop and test,\\' emphasizing the necessity of clarity for project success. Weaknesses: A limitation is the potential oversimplification of clarity, as it encompasses both technical and social dimensions that may not be fully addressed. Future Consideration: Further qualitative research on team dynamics and user story interpretation could enhance understanding of clarity\\'s role in agile methodologies.\"\\n}', 'Role2(Product Owners): Round 4\\n{\\n\\t\"Final Claim\": \"\u2705 Yes, the code \\'User Story Clarity\\' should be retained.\",\\n\\t\"Final Explanation\": \"I continue to support my initial claim because the emphasis on clarity in user stories is essential for effective collaboration and understanding among team members, aligning with my qualitative focus on culture and meaning.\",\\n\\t\"Self-Reflection\": \"The strongest evidence supporting my decision is the observation that addressing questions during the sprint planning meeting enhances clarity and reduces defects. However, a limitation is the potential oversight of quantitative aspects that may also contribute to clarity. Future consideration could involve exploring how both qualitative and quantitative measures can be integrated to enhance understanding in user stories.\"\\n}', 'Role3(Scrum Masters): Round 4\\n{\\n\\t\"Final Claim\": \"\u2705 Yes, the code \\'User Story Clarity\\' should be retained.\",\\n\\t\"Final Explanation\": \"I continue to support my initial claim because the distinction between the Psychologist\\'s focus on objectives and the Legal Professional\\'s emphasis on project goals highlights the multifaceted nature of clarity in user stories, which is essential for effective collaboration.\",\\n\\t\"Self-Reflection\": \"Strengths: The strongest evidence comes from the observation that clear user stories enable the team to know what to develop and test, reinforcing the necessity of clarity. Weaknesses: A limitation is that the differing interpretations of clarity may not fully encompass all aspects of user stories. Future Consideration: Further qualitative research could explore how different roles interpret clarity in user stories to enhance understanding across disciplines.\"\\n}']",
+                "",
+                ""
+            ],
+            "Closing": "{\n  \"decision_mode\": \"Consensus\",\n  \"Resolution\": \"Retain\",\n  \"final_code\": \"User Story Clarity\",\n  \"evidence\": \"All roles unanimously support retaining the code 'User Story Clarity', emphasizing its importance for effective collaboration and understanding in agile methodologies.\"\n}"
+        }
+    ],
+    "Codebook": [
+        {
+            "code": "Collaboration with PO",
+            "evidence": "The text underscores the significance of collaboration with the product owner, which enhances understanding and reduces defects during development. This is supported by the phrase, [this collaboration with the PO helps better understanding of the user stories]."
+        },
+        {
+            "code": "Early Question/Issue Resolution",
+            "evidence": "Addressing questions at the beginning of the sprint planning meeting allows the team to focus on development without delays, improving overall efficiency. This is reflected in the text, [if we have any doubt or query, that is answered at the very beginning rather than bringing up questions towards the end]."
+        },
+        {
+            "code": "Continuous Feedback Loop",
+            "evidence": "The mention of receiving feedback on an ongoing basis indicates a commitment to iterative improvement and quick rectification of issues, as seen in the statement, [we receive feedback on ongoing bases and we rectify quickly]."
+        },
+        {
+            "code": "User Story Clarity",
+            "evidence": "All roles unanimously support retaining the code 'User Story Clarity', emphasizing its importance for effective collaboration and understanding in agile methodologies."
+        }
+    ]
+}

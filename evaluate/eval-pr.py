@@ -42,9 +42,8 @@ def pr_code(code_deb, code_gt):
 
     precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
     recall = TP / (TP + FN) if (TP + FN) > 0 else 0.0
-    F1 = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0.0
 
-    return precision, recall, F1
+    return precision, recall
 
 
 def judge_pr_code(code_deb, code_gt):
@@ -79,8 +78,7 @@ def judge_pr_code(code_deb, code_gt):
     TP_gt = sum(col_hits)
     recall = TP_gt / len(code_gt) if TP_gt <= len(code_gt) else 1
 
-    F1 = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0.0
-    return precision, recall, F1, conf_matrix
+    return precision, recall, conf_matrix
 
 
 if __name__ == '__main__':
@@ -89,9 +87,9 @@ if __name__ == '__main__':
         code_deb = [code["code"].lower() for code in codebook["Codebook"]]
         code_gt = [code.lower() for code in codebook["Code_GroundTruth"]]
         print(f"---------------- evaluate {i} ----------------")
-        p, r, f1 = pr_code(set(code_deb), set(code_gt))
-        print(f"Precision: {p:.4f}, Recall: {r:.4f}, F1: {f1:.4f} ")
+        p, r = pr_code(set(code_deb), set(code_gt))
+        print(f"Precision: {p:.4f}, Recall: {r:.4f}")
 
-        p, r, f1, conf_matrix = judge_pr_code(code_deb, code_gt)
-        print(f"Precision: {p:.4f}, Recall: {r:.4f}, F1: {f1:.4f}, "
+        p, r, conf_matrix = judge_pr_code(code_deb, code_gt)
+        print(f"Precision: {p:.4f}, Recall: {r:.4f},"
               f"llm_judge_conf: {sum(sum(row) for row in conf_matrix) / sum(len(row) for row in conf_matrix):.4f}")
