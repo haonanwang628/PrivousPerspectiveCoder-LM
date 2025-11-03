@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import os
 
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 
 json_file = f"{project_root}\Data\Scrum-interviews\output\codebook.json"
 
