@@ -104,15 +104,15 @@ class MultiAgentsHumanDiscussion(MultiAgentsDiscussion):
             st.markdown("""
                 <style>
                 div.stButton > button:first-child {
-                    color: red;              /* 文字颜色 */
-                    padding: 10px;          /* 内边距 */
-                    border-radius: 10px;       /* 圆角 */
-                    font-size: 10px;         /* 字体大小 */
-                    transition: 1s;        /* 平滑过渡 */
+                    color: red;             
+                    padding: 10px;          
+                    border-radius: 10px;      
+                    font-size: 10px;        
+                    transition: 1s;        
                 }
                 div.stButton > button:first-child:hover {
-                    background-color: #45a049; /* 悬停时颜色 */
-                    transform: scale(1.1);   /* 悬停放大 */
+                    background-color: #45a049; 
+                    transform: scale(1.1);   
                 }
                 </style>
             """, unsafe_allow_html=True)
@@ -208,7 +208,7 @@ class MultiAgentsHumanDiscussion(MultiAgentsDiscussion):
             role_info = roles[j]
             role = role_info["obj"]
 
-            # 插手人工输入
+            # human input
             if j == 2 and not st.session_state.input_finished:
                 st.markdown(f"{role_info['color']} **{role_info['name']}** is waiting for your input:")
                 st.text_input("Your Thinking", key="human_input", label_visibility="collapsed")
@@ -234,13 +234,13 @@ class MultiAgentsHumanDiscussion(MultiAgentsDiscussion):
 
                 st.stop()
 
-            # 生成 prompt
+            # generate prompt
             if i == 0 or i == 3:
                 event_text = f"Round {i + 1}:\n{st.session_state.discuss_text}".replace("[code]", code).replace(
                     "[code]",
                     code)
             else:
-                last_response = st.session_state.discuss_response[-1] if st.session_state.discuss_response else ""
+                # last_response = st.session_state.discuss_response[-1] if st.session_state.discuss_response else ""
                 # event_text = f"Round {i + 1}:\n{st.session_state.discuss_text}".replace("[response]", str(last_response))
                 event_text = f"Round {i + 1}:\n{st.session_state.discuss_text}"
             if j != 2:
@@ -255,10 +255,10 @@ class MultiAgentsHumanDiscussion(MultiAgentsDiscussion):
                                      response.replace(f"Round {i + 1}", ""))
             st.session_state[f"round_{i}_responses"].append(f"{role_info['name']}: {response}")
 
-            # 前进一位角色
+            # Advance one role
             st.session_state.current_role += 1
             if st.session_state.current_role >= len(roles):
-                # 本轮结束
+                # This round has ended
                 st.session_state.discuss_response.append(
                     f"Round {i + 1}: {st.session_state[f'round_{i}_responses']}"
                 )
@@ -291,7 +291,7 @@ class MultiAgentsHumanDiscussion(MultiAgentsDiscussion):
                 st.session_state.final_code = close_response["final_code"]
                 st.session_state.final_justification = close_response["definition"]
 
-            # 清除起始标记，允许重复运行
+            # Clear the starting marker to allow repeated runs.
             del st.session_state.discuss_started
 
 

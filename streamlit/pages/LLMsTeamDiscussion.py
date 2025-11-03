@@ -152,15 +152,15 @@ class MultiAgentsDiscussion:
             st.markdown("""
                 <style>
                 div.stButton > button:first-child {
-                    color: red;              /* 文字颜色 */
-                    padding: 10px;          /* 内边距 */
-                    border-radius: 10px;       /* 圆角 */
-                    font-size: 10px;         /* 字体大小 */
-                    transition: 1s;        /* 平滑过渡 */
+                    color: red;              
+                    padding: 10px;          
+                    border-radius: 10px;       
+                    font-size: 10px;         
+                    transition: 1s;       
                 }
                 div.stButton > button:first-child:hover {
-                    background-color: #45a049; /* 悬停时颜色 */
-                    transform: scale(1.1);   /* 悬停放大 */
+                    background-color: #45a049; 
+                    transform: scale(1.1);  
                 }
                 </style>
             """, unsafe_allow_html=True)
