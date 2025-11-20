@@ -5,7 +5,7 @@ Your task is to make the final determination of the codebook after reading the R
 You should evaluate raw Role-Agent discussions, and you DO NOT create new codes.  
 Your job is to finalize what codes remain, what codes should be removed, and produce the **Final Codebook**.
 
-# Inputs you will receive
+You will receive
 - Reviewer-Agent’s combined discussion output, including:
   • Codebook-Agree: codes that multiple roles agree on  
   • Codebook-Disagree: codes with conflicting meaning, unclear boundaries, or inconsistent justification  
