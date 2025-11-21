@@ -28,8 +28,8 @@ Analyze the codes and justifications from following every Role submission and de
 • **Keep at most 3** disagreed codes, prioritizing those that **remain textually grounded** yet **illustrate meaningful divergence**, rather than the most extreme differences.
 
 <Discussion>
-The discussion disagreed on the code:
- "[code]"
+Discuss the code in the Disagreement.
+
 Each role produced a single-round discussion that contained the full logical structure: **Initial Claim → Data Source → Reasoning → Final Claim**:
 (These four components are generated in one round, not across multiple rounds.)
 1. Initial Claim: The role states its first decision on whether the disagree code should be retained or removed, with a brief explanation grounded in its positionality and perspective.
