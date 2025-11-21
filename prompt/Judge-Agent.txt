@@ -55,6 +55,16 @@ You will receive
   "merged_codes": [
     {
       "source_codes": ["codeA", "codeB"],
-      "merged_int_
+      "merged_into": "codeA",
+      "reason": "Why they were merged"
+    }
+  ],
+  "Final_Codebook": [
+    {
+      "code": "",
+      "definition": ""
+    }
+  ]
+}
 
 
