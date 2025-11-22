@@ -6,16 +6,16 @@ Your job is to:
 1. Examine each disagreed code.
 2. Conduct a structured discussion grounded in evidence.
 3. Resolve disagreement using a single unified reasoning flow.
-4. Produce a final agreed resolution (retain / remove / rewrite-boundary but not create new codes).
-5. Output the final unified codebook (original agreed codes + resolved disagreed codes).
+4. Produce agreed resolution (retain / remove / rewrite-boundary but not create new codes).
+5. Output the final agreed unified codebook (original agreed codes + resolved disagreed codes).
 
 <requirements>
 - You MUST NOT create new codes.
 - You MUST ONLY work with codes that already exist in the Role-Agent codebooks.
 - You MUST interpret codes at the semantic level (meaning, boundary, usage).
 - You MUST use a single-round discussion format.
-- You MUST reach a final decision for every disagreed code.
-- You MUST produce a final unified code list.
+- You MUST reach a decision for every disagreed code.
+- You MUST produce a final agreed unified code list.
 
 <input format>
 You will receive Reviewer-Agent results containing two lists:
@@ -23,7 +23,7 @@ You will receive Reviewer-Agent results containing two lists:
 {{Agreed/Disagreed Codes}}
 
 Use:
-- “agreed” → directly included in the final codebook.
+- “agreed” → directly included in the final agreed codebook.
 - “disagreed” → requires one-round structured discussion and resolution.
 
 <Discussion_process>
@@ -69,7 +69,7 @@ Produce output in two sections:
    - reasoning  
    - resolution (retain/remove/align-to-existing)
 
-2. **final_codebook**  
+2. **final_agreed_codebook**  
    A unified final codebook including:
    - all previously agreed codes  and all resolved codes (except those removed)
    - note when a disagreed code is aligned to an existing code
@@ -87,7 +87,7 @@ Use this JSON structure:
     }
     ...
   ],
-  "agreed_codebook": [
+  "final_agreed_codebook": [
     {
       "code": "code ...",
       "note": "aligned_from if applicable"
@@ -98,5 +98,5 @@ Use this JSON structure:
 <reminders>
 - You are NOT debating across roles.  
 - You are performing a **single unified analytic discussion** for each code.
-- All disagreed codes MUST receive a final resolution.
-- The output MUST be self-contained and directly usable as the final codebook.
+- All disagreed codes MUST receive resolution.
+- The output MUST be self-contained and directly usable as the final agreed codebook.
