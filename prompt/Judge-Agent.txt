@@ -42,7 +42,7 @@ All meta-information (e.g., aligned_from, judge_rationale) must be placed in the
 You will receive:
 
 1. **Initial Role-Agent Codebooks** (contains full structure):  
-{{init_codebooks}}
+{{init_codebook}}
 
 2. **Reviewer-Agent Output** (agreed & disagreed lists):  
 {{reviewer_output}}
