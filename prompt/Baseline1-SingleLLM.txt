@@ -27,3 +27,20 @@ You **MUST** follow the **codebook structured format** at your disposal to solve
 5. Typical examples: The most clear and representative quote that directly expresses the core meaning of the code.
 6. Atypical examples: The less common or less direct quote that still fits the code but expresses the idea in an unusual or indirect way
 7. Relevance_to_RQ: Explain how this code answers our research question and answer FROM a USER.
+
+# Output Format (strict JSON, no natural language)
+{
+  "codebook": [
+    {
+      "code": "string",
+      "definition": "string",
+      "inclusion_criteria": ["string"],
+      "exclusion_criteria": ["string"],
+      "typical_examples": ["string"],
+      "atypical_examples": ["string"],
+      "participants": ["string"],
+      "relevance_to_RQ":"string",
+      "notes": "string"
+    }
+            ]
+}
