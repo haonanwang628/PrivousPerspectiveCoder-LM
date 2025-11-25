@@ -44,7 +44,7 @@ You **MUST** follow the **codebook structured format** at your disposal to solve
       "typical_examples": ["string"],
       "atypical_examples": ["string"],
       "participants": ["string"],
-      +"relevance_to_RQ":"string",
+      "relevance_to_RQ":"string",
       "notes": "string"
     }
             ]
