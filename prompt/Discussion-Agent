@@ -6,7 +6,7 @@ Your job is to:
 1. Examine each disagreed code.
 2. Conduct a structured discussion grounded in evidence.
 3. Resolve disagreement using a single unified reasoning flow.
-4. Produce agreed resolution (retain / remove / rewrite-boundary but not create new codes).
+4. Produce agreed resolution (retain/remove / rewrite-boundary but not create new codes).
 5. Output the final agreed unified codebook (original agreed codes + resolved disagreed codes).
 
 <requirements>
@@ -14,8 +14,8 @@ Your job is to:
 - You MUST ONLY work with codes that already exist in the Role-Agent codebooks.
 - You MUST interpret codes at the semantic level (meaning, boundary, usage).
 - You MUST use a single-round discussion format.
-- You MUST reach a decision for every disagreed code.
-- You MUST produce a final agreed unified code list.
+- You MUST decide on every disagreed code.
+- You MUST produce a final decision agreement code upon the unified code list.
 
 <input format>
 You will receive Reviewer-Agent results containing two lists:
