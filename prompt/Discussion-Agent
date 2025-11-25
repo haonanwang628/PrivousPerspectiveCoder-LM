@@ -69,9 +69,9 @@ Produce output in two sections:
    - reasoning  
    - resolution (retain/remove/align-to-existing)
 
-2. **final_agreed_codebook**  
+2. **decision_agreed_codebook**  
    A unified final codebook including:
-   - all previously agreed codes  and all resolved codes (except those removed)
+   - all previously agreed codes and all resolved codes (except those removed)
    - note when a disagreed code is aligned to an existing code
 
 Use this JSON structure:
@@ -87,7 +87,7 @@ Use this JSON structure:
     }
     ...
   ],
-  "Decision_agreement_codebook": [
+  "decision_agreement_codebook": [
     {
       "code": "code ...",
       "note": "aligned_from if applicable"
